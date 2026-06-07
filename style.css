@@ -1,0 +1,62 @@
+:root {
+  --cor-fundo: #121212;         /* Preto profundo para o fundo principal */
+  --cor-fundo-transparente: #2222226c;
+  --cor-cards: #1a1a1a;         /* Cinza escuro para caixas de projetos e seções */
+  --cor-borda: #2a2a2a;         /* Cinza sutil para linhas divisórias e bordas */
+  --texto-principal: #e0e0e0;   /* Branco fosco/cinza claro para leitura confortável */
+  --texto-secundario: #777777;  /* Cinza médio para textos secundários e detalhes */
+  --contraste: #919070;         /* Cinza médio para contrastes em elementos*/
+}
+
+/*Configurações Gerais*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: var(--cor-fundo);
+}
+
+/*Cabeçalho*/
+header{
+  display: flex;
+  width: 100%;
+  padding: 1.1rem 1.3rem;
+  background-color: var(--cor-fundo-transparente);
+  backdrop-filter: blur(10px);
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+}
+
+header p{
+  font-size: 2.5rem;
+}
+
+.destaque{
+  color: var(--contraste);
+}
+
+/*Navegação*/
+.navbar nav ul{
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar nav ul li{
+  list-style: none;
+  font-size: 1.1rem;
+}
+
+.navbar nav ul li a{
+  color: var(--texto-principal);
+  transition: color 0.3s linear;
+}
+
+.navbar nav ul li a:hover{
+  color: var(--texto-secundario);
+}
