@@ -34,6 +34,7 @@ header{
 }
 
 header p{
+  color: var(--texto-principal);
   font-size: 2.5rem;
 }
 
@@ -68,6 +69,7 @@ header p{
   min-height: 80vh;
 }
 .hero h1{
+  color: var(--texto-principal);
   font-size: 3.5rem;
 }
 
@@ -90,4 +92,5 @@ header p{
 .hero a:hover{
   color: var(--texto-secundario);
   box-shadow: -1px 1px 5px var(--contraste);
+  
 }
