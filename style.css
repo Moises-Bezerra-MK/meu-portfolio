@@ -24,7 +24,7 @@ body{
 header{
   display: flex;
   width: 100%;
-  padding: 1.1rem 1.3rem;
+  padding: 1.1rem 4rem;
   background-color: var(--cor-fundo-transparente);
   backdrop-filter: blur(10px);
   justify-content: space-between;
@@ -59,4 +59,35 @@ header p{
 
 .navbar nav ul li a:hover{
   color: var(--texto-secundario);
+}
+
+/*Hero*/
+.hero{
+  padding-top: 150px;
+  text-align: center;
+  min-height: 80vh;
+}
+.hero h1{
+  font-size: 3.5rem;
+}
+
+.hero p{
+  color: var(--texto-principal);
+  font-size: 1.7rem;
+  margin-bottom: 5vh;
+}
+
+.hero a{
+  text-decoration: none;
+  background-color: var(--cor-cards);
+  color: var(--texto-principal);
+  border: 1px solid var(--cor-borda);
+  border-radius: 10px;
+  padding: 5px;
+  transition: color 0.3s linear, box-shadow 0.3s linear;
+}
+
+.hero a:hover{
+  color: var(--texto-secundario);
+  box-shadow: -1px 1px 5px var(--contraste);
 }
