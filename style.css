@@ -18,6 +18,7 @@
 
 body{
   background-color: var(--cor-fundo);
+  color: var(--texto-principal);
 }
 
 /*Cabeçalho*/
@@ -62,11 +63,11 @@ header p{
   color: var(--texto-secundario);
 }
 
-/*Hero*/
+/*Section Hero*/
 .hero{
-  padding-top: 150px;
   text-align: center;
-  min-height: 80vh;
+  padding-top: 40vh;
+  min-height: 100vh;
 }
 .hero h1{
   color: var(--texto-principal);
@@ -93,4 +94,29 @@ header p{
   color: var(--texto-secundario);
   box-shadow: -1px 1px 5px var(--contraste);
   
+}
+
+/*Clase geral para title*/
+.title{
+  color: var(--texto-principal);
+  font-size: 2.7rem;
+}
+
+/*Seção Sobre Mim*/
+.sobre{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  padding-top: 100px;
+  min-height: 100vh;
+}
+
+.sobre h2{
+  min-width: 100%;
+}
+
+.sobre .card-dev{
+  background-color: var(--cor-cards);
+  color: var(--texto-principal);
 }
