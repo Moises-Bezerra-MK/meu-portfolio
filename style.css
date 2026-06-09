@@ -119,4 +119,19 @@ header p{
 .sobre .card-dev{
   background-color: var(--cor-cards);
   color: var(--texto-principal);
+  border: 1px solid var(--cor-borda);
+  border-radius: 15px;
+  box-shadow: -10px 10px 15px #333333;
+  margin: 0 3rem 10vh;
+  transition: transform 0.4s linear ,box-shadow 0.4s linear;
+}
+
+.sobre .card-dev:hover{
+  transform: translateY(-3px);
+  box-shadow: -5px 10px 20px #777777;
+}
+
+.sobre .card-dev p{
+  font-size: 1.5rem;
+  padding: 1rem;
 }
