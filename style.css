@@ -1,11 +1,11 @@
 :root {
   --cor-fundo: #121212;         /* Preto profundo para o fundo principal */
-  --cor-fundo-transparente: #2222226c;
-  --cor-cards: #1a1a1a;         /* Cinza escuro para caixas de projetos e seções */
-  --cor-borda: #2a2a2a;         /* Cinza sutil para linhas divisórias e bordas */
-  --texto-principal: #e0e0e0;   /* Branco fosco/cinza claro para leitura confortável */
-  --texto-secundario: #777777;  /* Cinza médio para textos secundários e detalhes */
-  --contraste: #919070;         /* Cinza médio para contrastes em elementos*/
+  --cor-fundo-transparente: #121212CC;  /* Preto com transparência */
+  --cor-cards: #1A1A1A;         /* Cinza escuro para caixas de projetos e seções */
+  --cor-borda: #2A2A2A;         /* Cinza para linhas divisórias e bordas */
+  --texto-principal: #E0E0E0;   /* Branco fosco */
+  --texto-secundario: #A0A0A0;  /* Cinza médio */
+  --contraste: #919070;         /* Cinza médio para */
 }
 
 /*Configurações Gerais*/
@@ -46,7 +46,7 @@ header p{
 /*Navegação*/
 .navbar nav ul{
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .navbar nav ul li{
@@ -57,6 +57,7 @@ header p{
 .navbar nav ul li a{
   color: var(--texto-principal);
   transition: color 0.3s linear;
+  text-decoration: none;
 }
 
 .navbar nav ul li a:hover{
@@ -122,16 +123,66 @@ header p{
   border: 1px solid var(--cor-borda);
   border-radius: 15px;
   box-shadow: -10px 10px 15px #333333;
-  margin: 0 3rem 10vh;
+  margin: 0px 3rem 30vh;
   transition: transform 0.4s linear ,box-shadow 0.4s linear;
 }
 
 .sobre .card-dev:hover{
   transform: translateY(-3px);
-  box-shadow: -5px 10px 20px #777777;
+  box-shadow: -5px 10px 20px var(--contraste);
 }
 
 .sobre .card-dev p{
   font-size: 1.5rem;
   padding: 1rem;
+}
+
+/*Seção de Projetos*/
+.section-projetos{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 50vh;
+  padding-top: 100px;
+}
+
+.section-projetos h2{
+  width: 100%;
+  margin-bottom: 5vh;
+}
+
+.section-projetos .card-projeto{
+  background-color: var(--cor-cards);
+  max-width: 450px;
+  min-height: 250px;
+  padding: 3rem 2rem;  
+  border: 1px solid var(--cor-borda);
+  border-radius: 10px;
+  box-shadow: -10px 10px 15px #333333;
+  transition: transform 0.3s linear, box-shadow 0.3s linear;
+}
+
+.section-projetos .card-projeto:hover{
+  transform: translateY(-3px);
+  box-shadow: -5px 10px 20px var(--contraste);
+}
+
+.card-projeto h3{
+  font-size: 1.5rem;
+}
+
+.card-projeto .linguagens{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.linguagens .linguagem{
+  background-color: #63624c;
+  margin-top: 20px;
+  padding: 7px;
+  border: 1px solid var(--cor-borda);
+  border-radius: 10px;
 }
