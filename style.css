@@ -186,3 +186,17 @@ header p{
   border: 1px solid var(--cor-borda);
   border-radius: 10px;
 }
+
+/*Footer/Contato*/
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 50vh;
+}
+
+footer h2{
+  text-align: center;
+  width: 100%;
+}
